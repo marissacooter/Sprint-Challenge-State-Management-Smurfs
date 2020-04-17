@@ -21,4 +21,4 @@ const SmurfList = () => {
     );
 };
 
-export default SmurfsList
+export default SmurfList;
