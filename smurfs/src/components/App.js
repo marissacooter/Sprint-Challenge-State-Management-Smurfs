@@ -8,6 +8,17 @@ const App = () => {
 
   const [smurfs, setSmurfs] = useState([]) 
 
+  useEffect(() => {
+    axios
+      .get('http://localhost:3333/smurfs')
+      .then(res => {
+        setSmurfs(res.data)
+      })
+      .catch(err => {
+        console.log('The data was not returned', err);
+      })
+  }, []);
+
     return (
       <div className="App">
        hi
