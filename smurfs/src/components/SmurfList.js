@@ -10,10 +10,10 @@ const SmurfList = () => {
             <Create />
             {smurfs.map((smurf, index) => {
                 return (
-                    <div key={index}>
-                        <p>name:{smurf.name}</p>
-                        <p>age:{smurf.age}</p>
-                        <p>height:{smurf.height}</p>
+                    <div key={index} class='cards'>
+                        <p>Smurf Name: {smurf.name}</p>
+                        <p>Age: {smurf.age}</p>
+                        <p>Height: {smurf.height}</p>
                     </div>
                 )
             })}

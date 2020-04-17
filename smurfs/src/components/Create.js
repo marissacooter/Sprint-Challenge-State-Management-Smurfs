@@ -11,7 +11,7 @@ export default function Create() {
 
     //on submit handler and axios call to post my data
     const onSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         axios
             .post('http://localhost:3333/smurfs', smurfData)
             .then((res) => {
